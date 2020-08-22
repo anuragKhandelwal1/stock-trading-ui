@@ -1,0 +1,14 @@
+.avatar {
+  vertical-align: middle;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+
+.trader-card {
+  height: 150px;
+  width: 150px;
+  margin: 8px;
+}
