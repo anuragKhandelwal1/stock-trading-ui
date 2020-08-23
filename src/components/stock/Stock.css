@@ -1,0 +1,20 @@
+.stock-symbol {
+  vertical-align: middle;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-left: 8px;
+}
+
+.stock-card {
+  width: 18rem;
+  padding: 4px;
+  margin: 8px;
+}
+
+.stock-image {
+  height: 100px;
+  width: 100px;
+}

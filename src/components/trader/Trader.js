@@ -1,10 +1,8 @@
 import React from 'react';
 import './Trader.css';
 import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWallet } from '@fortawesome/free-solid-svg-icons';
+import { faWallet, faCoins } from '@fortawesome/free-solid-svg-icons';
 
 function Trader(props) {
   const img =
@@ -12,10 +10,23 @@ function Trader(props) {
   return (
     <div>
       <Card className='trader-card'>
-        <img src={img} className='avatar' />
-        <Card.Title>John Doe</Card.Title>
+        <span>
+          <img src={img} className='avatar' alt='trader-avatar' />
+        </span>
+        <span>John Doe</span>
         <Card.Text>
-          <FontAwesomeIcon icon={faWallet} /> $2500
+          <span className='d-block'>
+            <span>Remaining:</span>{' '}
+            <span>
+              <FontAwesomeIcon icon={faWallet} /> $500
+            </span>
+          </span>
+          <span className='d-block'>
+            <span>Worth:</span>{' '}
+            <span>
+              <FontAwesomeIcon icon={faCoins} /> $2000
+            </span>
+          </span>
         </Card.Text>
       </Card>
     </div>
